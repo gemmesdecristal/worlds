@@ -1,12 +1,15 @@
 [tool.poetry]
-name = "api"
+name = "worlds"
 version = "0.1.0"
-description = ""
+description = "Web app for Role Playing Games"
 authors = ["pinzen","viococo"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+flask = "^2.3.3"
+black = "^23.9.0"
+mypy = "^1.5.1"
 
 
 [build-system]

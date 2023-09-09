@@ -1,0 +1,6 @@
+.mypy_cache/*
+node_modules/*
+.venv
+.DS_Store
+.settings.json
+**/__pycache__/
