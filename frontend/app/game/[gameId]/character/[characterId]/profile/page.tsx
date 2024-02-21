@@ -17,13 +17,16 @@ const fetchCharacter = async () => {
   return new CharacterObj(data.name, data.class);
 };
 
-export const Character = async () => {
+export const Character = async ({ params }: { params: { gameId: string; characterId: string } }) => {
+  const { gameId, characterId } = params;
   const characterData = await fetchCharacter();
 
   return (
     <div>
       <h1>Character Information</h1>
       <ul>
+        <li>game id: {gameId}</li>
+        <li>character id: {characterId}</li>
         <li>name: {characterData.name}</li>
         <li>class: {characterData.class_}</li>
       </ul>
