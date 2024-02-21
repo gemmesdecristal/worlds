@@ -22,7 +22,7 @@ export const Character = async () => {
 
   return (
     <div>
-      <h1>Character</h1>
+      <h1>Character Information</h1>
       <ul>
         <li>name: {characterData.name}</li>
         <li>class: {characterData.class_}</li>

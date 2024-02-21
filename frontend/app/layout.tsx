@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar />
-        <h1>This is Worlds !</h1>
         {children}
       </body>
     </html>
