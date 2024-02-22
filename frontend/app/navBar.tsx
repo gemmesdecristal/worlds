@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "@/app/styles.module.css";
+import { LogoutButton } from "./logoutButton";
 
 export const NavBar = () => {
   return (
@@ -13,6 +14,7 @@ export const NavBar = () => {
       <Link href="/game/gameId/town" className={styles.link}>
         Town
       </Link>
+      <LogoutButton />
     </div>
   );
 };
